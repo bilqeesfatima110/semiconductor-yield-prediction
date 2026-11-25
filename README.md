@@ -20,10 +20,10 @@ Joblib.
 The target column was separated and the time column excluded from sensor inputs. Data was split into training and testing sets (80%/20%). Missing values were filled with the median, features were scaled using StandardScaler, and PCA retained enough components to explain 95% of training-data variation. SMOTE was applied within the training pipeline. Logistic Regression, Random Forest, and SVM were compared and tuned using GridSearchCV with 3-fold cross-validation focused on the Fail-class F1-score.
 
 ## Results
-|Model	| Test Accuracy	| Fail F1-score
-SVM	| 0.86	| 0.12
-Logistic Regression	| 0.81	| 0.12
-Random Forest	| 0.92	| 0.07
+|Model	| Test Accuracy	| Fail F1-score <br>
+SVM	| 0.86	| 0.12 <br>
+Logistic Regression	| 0.81	| 0.12 <br>
+Random Forest	| 0.92	| 0.07 <br>
 SVM was selected in this run based on the highest Fail F1-score. Fail detection remained weak, so the model is a baseline and is not production-ready.
 
 ## Conclusion
